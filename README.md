@@ -4,3 +4,4 @@
 * resizecorners - Allows resizing from each corner.
 * fullgaps - Allows for gaps
 * barpadding - Padding around bar!
+* barheight - Allows for customizable height
