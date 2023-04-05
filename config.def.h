@@ -3,6 +3,7 @@
 /* appearance */
 
 /* Custom Settings */
+static const char editor[]          = "emacsclient -c";
 static const char terminal[]        = "alacritty";
 static const char browser[]         = "firefox";
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -92,6 +93,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
     /* My Custom Keybindings -- BEGIN */
     { MODKEY,                       XK_u,      spawn,          SHCMD(browser) },
+    { MODKEY|ShiftMask,             XK_u,      spawn,          SHCMD(editor) },
+
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
